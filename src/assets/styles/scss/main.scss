@@ -1,0 +1,17 @@
+@import 'variables';
+
+@import './components/buttons.scss';
+@import './components/backgroundImage.scss';
+@import './components/header.scss';
+@import './components/WindowTemplate.scss';
+@import './components/ChatWindow.scss';
+@import './components/AddDataSource.scss';
+@import './components/CodeEditor.scss';
+@import './components/NotePad.scss';
+
+@import 'Pages/AuthPage.scss';
+
+
+body {
+    font-size: small !important;
+}

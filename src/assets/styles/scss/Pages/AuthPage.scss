@@ -1,0 +1,44 @@
+.auth-page {
+    color: $text-black;
+    background-size: cover; 
+    background-position: center; 
+    
+    .brand-logo{
+        h1 {
+            font-family: $brand-font;
+            font-size: 100px;
+            color: rgba($text-black, 0.7); 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+    }
+    .wrapper {
+        box-shadow: 0 0 40px rgba(0,0,0,0.16);
+        backdrop-filter: blur(2px);
+        font-family: $font-primary;
+        
+        p{
+            color: $secondary-color;
+        }
+
+        .input-group {
+            input {
+                background-color: $primary-color;
+                box-shadow: none;
+                color: $secondary-color;
+                &:focus {
+                    border-color: $secondary-color; 
+                    box-shadow: none;
+                }
+            }
+            &:focus-within .input-group-text {
+                border-color: $secondary-color;
+                i{
+                    color: $secondary-color;
+                }
+            }
+        }
+        
+      
+    }
+}
