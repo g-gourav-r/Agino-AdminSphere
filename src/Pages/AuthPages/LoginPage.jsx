@@ -45,7 +45,7 @@ function LoginPage() {
             const loginApiCall = createApiCall("login", POST);
             setLoading(true);
             loginApiCall({
-                body: { email: email, password: password },
+                body: { username: email, password: password },
             })
               .then(response => {
                 setLoading(false);
