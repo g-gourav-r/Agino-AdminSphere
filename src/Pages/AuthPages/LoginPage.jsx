@@ -42,7 +42,7 @@ function LoginPage() {
         }
 
         if (isValid) {
-            const loginApiCall = createApiCall("/login", POST);
+            const loginApiCall = createApiCall("login", POST);
             setLoading(true);
             loginApiCall({
                 body: { email: email, password: password },
