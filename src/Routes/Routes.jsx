@@ -13,9 +13,8 @@ function AppRouter() {
         <Routes>
             <Route path="/login" element={<LoginPage />} />
             <Route path="/home" element={<HomePage />} />
-
             {/* Protected Routes */}
-            {/* <Route path="/" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />            */}
+            <Route path="/" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />           
         </Routes>
       </Router>
     );
