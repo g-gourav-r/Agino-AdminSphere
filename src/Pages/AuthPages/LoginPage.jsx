@@ -45,11 +45,11 @@ function LoginPage() {
             const loginApiCall = createApiCall("login", POST);
             setLoading(true);
             loginApiCall({
-                body: { username: email, password: password },
+                body: { email: email, password: password },
             })
               .then(response => {
                 setLoading(false);
-                const token = response.token;
+                const token = response.access_token;
                 localStorage.setItem('token', token);
                 localStorage.setItem('psid', uuidv4());
                 navigate('/home');

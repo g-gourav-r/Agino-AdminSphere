@@ -3,7 +3,7 @@ export const POST = 'post';
 export const PUT = 'put';
 
 const createApiCall = (url, method) => (params = {}) => {
-    let apiEndpoint = "https://primus-1ppt.onrender.com/" + url;
+    let apiEndpoint = "https://agino-adminsphere-fastapi.onrender.com/api/admin/" + url;
     const { body, urlParams, pathVariables, headers = {} } = params;
 
     // Handle URL parameters
